@@ -2,6 +2,7 @@ import { Tabs } from "expo-router";
 import React from "react";
 
 import { IconSymbol } from "@/components/ui/icon-symbol";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
 const COLORS = {
   neonGreen: "#39E878",
@@ -46,7 +47,7 @@ export default function TabLayout() {
         options={{
           title: "Explore",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
+            <FontAwesome5 name="dumbbell" size={24} color={color} />
           ),
         }}
       />
