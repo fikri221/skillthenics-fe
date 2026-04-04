@@ -3,6 +3,7 @@ import React from "react";
 
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import { BarChart2, GitBranch } from "lucide-react-native";
 
 const COLORS = {
   neonGreen: "#39E878",
@@ -43,11 +44,29 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="skills"
         options={{
-          title: "Explore",
+          title: "Skills",
+          tabBarIcon: ({ color, size }) => (
+            <GitBranch size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="workout"
+        options={{
+          title: "Workout",
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="dumbbell" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="progress"
+        options={{
+          title: "Progress",
+          tabBarIcon: ({ color, size }) => (
+            <BarChart2 size={size} color={color} />
           ),
         }}
       />

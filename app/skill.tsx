@@ -1,5 +1,5 @@
 import { View, Text, Button } from "react-native";
-import { useSkillStore } from "../store/useSkillStore";
+import { useSkillStore } from "@/store/useSkillStore";
 
 export default function Skill() {
   const { skills, levelUp } = useSkillStore();
